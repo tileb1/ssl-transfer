@@ -12,6 +12,9 @@ from abc import abstractmethod
 from PIL import ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
+first_cpu = os.sched_getaffinity(0)[0]
+os.sched_setaffinity(0, set(range(first_cpu, first_cpu+12)))
+
 from datasets.dtd import DTD
 from datasets.pets import Pets
 from datasets.cars import Cars

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-sbatch job.sh --export=model_name='deepcluster-v2' --export=dataset_name='dtd' 'testarg'
+sbatch job.sh 'deepcluster-v2' 'dtd'

@@ -1,4 +1,31 @@
 #!/bin/bash
 
 
-sbatch job.sh 'deepcluster-v2' 'dtd'
+sbatch job.sh 'simsiam_100' 'aircraft'
+sbatch job.sh 'simsiam_100' 'cifar10'
+sbatch job.sh 'simsiam_100' 'cifar100'
+sbatch job.sh 'simsiam_100' 'dtd'
+sbatch job.sh 'simsiam_100' 'flowers'
+sbatch job.sh 'simsiam_100' 'pets'
+sbatch job.sh 'simsiam_100' 'cifar10'
+
+
+sbatch job.sh 'nnclr_simsiam_100' 'aircraft'
+sbatch job.sh 'nnclr_simsiam_100' 'cifar10'
+sbatch job.sh 'nnclr_simsiam_100' 'cifar100'
+sbatch job.sh 'nnclr_simsiam_100' 'dtd'
+sbatch job.sh 'nnclr_simsiam_100' 'flowers'
+sbatch job.sh 'nnclr_simsiam_100' 'pets'
+sbatch job.sh 'nnclr_simsiam_100' 'cifar10'
+
+
+sbatch job.sh 'adasim_simsiam_100' 'aircraft'
+sbatch job.sh 'adasim_simsiam_100' 'cifar10'
+sbatch job.sh 'adasim_simsiam_100' 'cifar100'
+sbatch job.sh 'adasim_simsiam_100' 'dtd'
+sbatch job.sh 'adasim_simsiam_100' 'flowers'
+sbatch job.sh 'adasim_simsiam_100' 'pets'
+sbatch job.sh 'adasim_simsiam_100' 'cifar10'
+
+
+# still need to do food, sun397, cars (after download is finished), caltech101 (after GOOGLE_BACKGROUND is fixed)

@@ -93,7 +93,7 @@ class SetDataset:
             os.system("taskset -p -c %d %d" % ((cpus[(index) % len(cpus)]), w.pid))
         for (data, label) in the_iterator:
             for index in range(len(data)):
-                self.sub_meta[label[index]].append(data[index])
+                self.sub_meta[label[index].item()].append(data[index])
 
         # for i, (data, label) in enumerate(d):
         #     self.sub_meta[label].append(data)

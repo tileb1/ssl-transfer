@@ -250,4 +250,4 @@ if __name__ == "__main__":
     tester = FewShotTester(model, dataloader, args.n_way, args.n_support, args.n_query, args.iter_num, args.device)
     test_acc, test_std = tester.test()
     with open('output/{}_{}.txt'.format(args.model, args.dataset), 'w') as f:
-        f.write('{}{}\n'.format(test_acc, test_std))
+        f.write('{} {} {}\n'.format(test_acc, test_std, args.n_support))

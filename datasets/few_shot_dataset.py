@@ -86,14 +86,14 @@ class SetDataset:
         d = ConcatDataset([trainval_dataset, test_dataset])
         print(f'Total dataset size: {len(d)}')
 
-        my_loader = torch.utils.data.DataLoader(d, shuffle=False, batch_size=64, drop_last=False, num_workers=12)
+        my_loader = torch.utils.data.DataLoader(d, shuffle=False, batch_size=1, drop_last=False, num_workers=12)
         the_iterator = iter(my_loader)
         cpus = list(sorted(os.sched_getaffinity(0)))
         for index, w in enumerate(the_iterator._workers):
             os.system("taskset -p -c %d %d" % ((cpus[(index) % len(cpus)]), w.pid))
         for (data, label) in the_iterator:
-            for index in range(len(data)):
-                self.sub_meta[label[index].item()].append(data[index])
+            hum = label[0].item()
+            self.sub_meta[hum].append(data[0])
 
         # for i, (data, label) in enumerate(d):
         #     self.sub_meta[label].append(data)

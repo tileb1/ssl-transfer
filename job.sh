@@ -12,4 +12,7 @@
 
 
 echo $(which conda)
+echo $dataset_name
+echo $model_name
+echo $1
 python few_shot.py --n-way 5 --n-support 1 --model $model_name --dataset $dataset_name

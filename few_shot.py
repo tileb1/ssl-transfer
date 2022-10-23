@@ -246,7 +246,7 @@ if __name__ == "__main__":
     # load pretrained model
     if 'vit' in args.model:
         import utils
-        model = vits.__dict__[args.arch](patch_size=16, num_classes=0)
+        model = vits.__dict__['vit_small'](patch_size=16, num_classes=0)
         pretrained_weights = os.path.join('/dodrio/scratch/projects/2022_017/transfer-ssl/ssl-transfer/models', args.model + '.pth')
         utils.load_pretrained_weights(model, pretrained_weights, 'teacher', 'vit_small', 16)
         model.to(args.device)

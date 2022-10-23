@@ -4,7 +4,7 @@
 #SBATCH --account=2022_017
 #SBATCH --gpus-per-node=1
 #SBATCH --cpus-per-gpu=12
-#SBATCH --mem=62GB
+#SBATCH --mem=124GB
 #SBATCH --nodes=1
 #SBATCH --open-mode=append
 #SBATCH --partition=gpu_rome_a100

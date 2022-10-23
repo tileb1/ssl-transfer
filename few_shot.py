@@ -31,6 +31,9 @@ from datasets.flowers import Flowers
 from datasets.aircraft import Aircraft
 from datasets.caltech101 import Caltech101
 
+first_cpu = sorted(list(os.sched_getaffinity(0)))[0]
+os.sched_setaffinity(0, set(range(first_cpu, first_cpu+12)))
+
 
 class FewShotTester():
     def __init__(self, backbone, dataloader, n_way, n_support, n_query, iter_num, device):

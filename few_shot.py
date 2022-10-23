@@ -13,6 +13,7 @@ from torchvision import models, datasets
 
 import numpy as np
 from tqdm import tqdm
+import vision_transformers as vits
 
 from datasets import isic
 from datasets import eurosat
@@ -243,8 +244,15 @@ if __name__ == "__main__":
     dataloader = datamgr.get_data_loader(aug=False, normalise=args.norm)
 
     # load pretrained model
-    model = ResNetBackbone(args.model)
-    model = model.to(args.device)
+    if 'vit' in args.model:
+        import utils
+        model = vits.__dict__[args.arch](patch_size=16, num_classes=0)
+        pretrained_weights = os.path.join('/dodrio/scratch/projects/2022_017/transfer-ssl/ssl-transfer/models', args.model + '.pth')
+        utils.load_pretrained_weights(model, pretrained_weights, 'teacher', 'vit_small', 16)
+        model.to(args.device)
+    else:
+        model = ResNetBackbone(args.model)
+        model = model.to(args.device)
 
     # evaluate model on dataset by protonet few-shot-learning evaluation
     tester = FewShotTester(model, dataloader, args.n_way, args.n_support, args.n_query, args.iter_num, args.device)

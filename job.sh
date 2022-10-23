@@ -13,4 +13,4 @@
 
 echo $(which conda)
 echo $1 $2
-python few_shot.py --n-way 5 --n-support 1 --model $1 --dataset $2
+python few_shot.py --n-way 5 --n-support 5 --model $1 --dataset $2

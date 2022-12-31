@@ -12,6 +12,18 @@
 #sbatch job.sh 'simsiam_100' 'sun397'
 #sbatch job.sh 'simsiam_100' 'caltech101'
 
+
+sbatch job.sh 'adasim_lumi_best' 'aircraft'
+sbatch job.sh 'adasim_lumi_best' 'cifar10'
+sbatch job.sh 'adasim_lumi_best' 'cifar100'
+sbatch job.sh 'adasim_lumi_best' 'dtd'
+sbatch job.sh 'adasim_lumi_best' 'flowers'
+sbatch job.sh 'adasim_lumi_best' 'pets'
+sbatch job.sh 'adasim_lumi_best' 'food'
+sbatch job.sh 'adasim_lumi_best' 'cars'
+sbatch job.sh 'adasim_lumi_best' 'sun397'
+sbatch job.sh 'adasim_lumi_best' 'caltech101'
+
 ########################################################################
 #sbatch job.sh 'nnclr_simsiam_100' 'aircraft'
 #sbatch job.sh 'nnclr_simsiam_100' 'cifar10'
@@ -73,27 +85,27 @@
 #sbatch job.sh 'dino_vitsmall16_pretrain_full_checkpoint' 'sun397'
 #sbatch job.sh 'dino_vitsmall16_pretrain_full_checkpoint' 'caltech101'
 
-sbatch job.sh 'dino_resnet_100' 'cifar10'
-sbatch job.sh 'dino_resnet_100' 'cifar100'
-sbatch job.sh 'adasim_resnet_100' 'cifar10'
-sbatch job.sh 'adasim_resnet_100' 'cifar100'
-
-
-sbatch job.sh 'dino_resnet_100' 'aircraft'
-sbatch job.sh 'dino_resnet_100' 'dtd'
-sbatch job.sh 'dino_resnet_100' 'flowers'
-sbatch job.sh 'dino_resnet_100' 'pets'
-sbatch job.sh 'dino_resnet_100' 'food'
-sbatch job.sh 'dino_resnet_100' 'cars'
-sbatch job.sh 'dino_resnet_100' 'sun397'
-sbatch job.sh 'dino_resnet_100' 'caltech101'
-
-
-sbatch job.sh 'adasim_resnet_100' 'aircraft'
-sbatch job.sh 'adasim_resnet_100' 'dtd'
-sbatch job.sh 'adasim_resnet_100' 'flowers'
-sbatch job.sh 'adasim_resnet_100' 'pets'
-sbatch job.sh 'adasim_resnet_100' 'food'
-sbatch job.sh 'adasim_resnet_100' 'cars'
-sbatch job.sh 'adasim_resnet_100' 'sun397'
-sbatch job.sh 'adasim_resnet_100' 'caltech101'
+#sbatch job.sh 'dino_resnet_100' 'cifar10'
+#sbatch job.sh 'dino_resnet_100' 'cifar100'
+#sbatch job.sh 'adasim_resnet_100' 'cifar10'
+#sbatch job.sh 'adasim_resnet_100' 'cifar100'
+#
+#
+#sbatch job.sh 'dino_resnet_100' 'aircraft'
+#sbatch job.sh 'dino_resnet_100' 'dtd'
+#sbatch job.sh 'dino_resnet_100' 'flowers'
+#sbatch job.sh 'dino_resnet_100' 'pets'
+#sbatch job.sh 'dino_resnet_100' 'food'
+#sbatch job.sh 'dino_resnet_100' 'cars'
+#sbatch job.sh 'dino_resnet_100' 'sun397'
+#sbatch job.sh 'dino_resnet_100' 'caltech101'
+#
+#
+#sbatch job.sh 'adasim_resnet_100' 'aircraft'
+#sbatch job.sh 'adasim_resnet_100' 'dtd'
+#sbatch job.sh 'adasim_resnet_100' 'flowers'
+#sbatch job.sh 'adasim_resnet_100' 'pets'
+#sbatch job.sh 'adasim_resnet_100' 'food'
+#sbatch job.sh 'adasim_resnet_100' 'cars'
+#sbatch job.sh 'adasim_resnet_100' 'sun397'
+#sbatch job.sh 'adasim_resnet_100' 'caltech101'

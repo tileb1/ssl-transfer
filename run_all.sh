@@ -13,16 +13,16 @@
 #sbatch job.sh 'simsiam_100' 'caltech101'
 
 
-sbatch job.sh 'adasim_lumi_best' 'aircraft'
-sbatch job.sh 'adasim_lumi_best' 'cifar10'
-sbatch job.sh 'adasim_lumi_best' 'cifar100'
-sbatch job.sh 'adasim_lumi_best' 'dtd'
-sbatch job.sh 'adasim_lumi_best' 'flowers'
-sbatch job.sh 'adasim_lumi_best' 'pets'
-sbatch job.sh 'adasim_lumi_best' 'food'
-sbatch job.sh 'adasim_lumi_best' 'cars'
-sbatch job.sh 'adasim_lumi_best' 'sun397'
-sbatch job.sh 'adasim_lumi_best' 'caltech101'
+sbatch job.sh 'adasim_lumi_best_vit' 'aircraft'
+sbatch job.sh 'adasim_lumi_best_vit' 'cifar10'
+sbatch job.sh 'adasim_lumi_best_vit' 'cifar100'
+sbatch job.sh 'adasim_lumi_best_vit' 'dtd'
+sbatch job.sh 'adasim_lumi_best_vit' 'flowers'
+sbatch job.sh 'adasim_lumi_best_vit' 'pets'
+sbatch job.sh 'adasim_lumi_best_vit' 'food'
+sbatch job.sh 'adasim_lumi_best_vit' 'cars'
+sbatch job.sh 'adasim_lumi_best_vit' 'sun397'
+sbatch job.sh 'adasim_lumi_best_vit' 'caltech101'
 
 ########################################################################
 #sbatch job.sh 'nnclr_simsiam_100' 'aircraft'
